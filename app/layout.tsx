@@ -9,8 +9,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Guitar Chords",
-  description: "Browse and learn common guitar chords with an intuitive neumorphic interface",
+  title: "Fretlings - Collect Chord Creatures",
+  description: "Master guitar chords through gameplay! Collect Fretlings by playing chords correctly and use them in battles.",
   generator: "v0.app",
 }
 

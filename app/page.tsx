@@ -6,7 +6,7 @@ import { ChordCard } from "@/components/chord-card"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { NoteFilter } from "@/components/note-filter"
 import { ChordTypeFilter } from "@/components/chord-type-filter"
-import { AudioUnlockModal } from "@/components/audio-unlock-modal"
+import { FretlingsSplash } from "@/components/fretlings-splash"
 import { CommandPalette } from "@/components/command-palette"
 import { Guitar, Plus, Minus, Search } from "lucide-react"
 import { MobileFilterDropdown } from "@/components/mobile-filter-dropdown"
@@ -99,7 +99,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-background">
-      <AudioUnlockModal />
+      <FretlingsSplash />
       <CommandPalette
         isOpen={isCommandPaletteOpen}
         onClose={() => setIsCommandPaletteOpen(false)}
