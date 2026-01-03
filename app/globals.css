@@ -3,103 +3,111 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Neumorphic theme with warm color palette for guitar chord app */
+/* Flat medieval-inspired theme with black background and vibrant colors */
 :root {
-  --background: oklch(0.95 0.01 80);
-  --foreground: oklch(0.2 0.02 50);
-  --card: oklch(0.95 0.01 80);
-  --card-foreground: oklch(0.2 0.02 50);
-  --popover: oklch(0.95 0.01 80);
-  --popover-foreground: oklch(0.2 0.02 50);
-  --primary: oklch(0.55 0.15 25);
-  --primary-foreground: oklch(0.98 0.01 80);
-  --secondary: oklch(0.92 0.02 80);
-  --secondary-foreground: oklch(0.25 0.02 50);
-  --muted: oklch(0.9 0.01 80);
-  --muted-foreground: oklch(0.45 0.02 50);
-  --accent: oklch(0.75 0.15 85);
-  --accent-foreground: oklch(0.2 0.02 50);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.88 0.01 80);
-  --input: oklch(0.92 0.01 80);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 1rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Pure black background */
+  --background: oklch(0 0 0);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.05 0 0);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.05 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  
+  /* Vibrant primary color - pink from unicorn */
+  --primary: oklch(0.7 0.2 350);
+  --primary-foreground: oklch(0 0 0);
+  
+  /* Secondary - teal from dragon */
+  --secondary: oklch(0.6 0.15 200);
+  --secondary-foreground: oklch(0.98 0 0);
+  
+  /* Muted - dark gray */
+  --muted: oklch(0.15 0 0);
+  --muted-foreground: oklch(0.7 0 0);
+  
+  /* Accent - orange from lion */
+  --accent: oklch(0.7 0.18 50);
+  --accent-foreground: oklch(0 0 0);
+  
+  /* Destructive - red from flames */
+  --destructive: oklch(0.6 0.25 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  
+  /* Borders - subtle gray */
+  --border: oklch(0.2 0 0);
+  --input: oklch(0.1 0 0);
+  --ring: oklch(0.7 0.2 350);
+  
+  /* Chart colors - vibrant palette */
+  --chart-1: oklch(0.7 0.2 350); /* pink */
+  --chart-2: oklch(0.6 0.2 240); /* blue */
+  --chart-3: oklch(0.6 0.15 200); /* teal */
+  --chart-4: oklch(0.7 0.18 50); /* orange */
+  --chart-5: oklch(0.75 0.2 90); /* yellow */
+  
+  --radius: 0.5rem;
+  
+  /* Sidebar */
+  --sidebar: oklch(0.05 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.7 0.2 350);
+  --sidebar-primary-foreground: oklch(0 0 0);
+  --sidebar-accent: oklch(0.1 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.2 0 0);
+  --sidebar-ring: oklch(0.7 0.2 350);
 
-  /* Note colors from palette */
-  --note-a: oklch(0.55 0.2 25);
-  --note-b: oklch(0.7 0.18 85);
-  --note-c: oklch(0.65 0.18 55);
-  --note-d: oklch(0.6 0.15 35);
-  --note-e: oklch(0.55 0.12 160);
-  --note-f: oklch(0.35 0.08 250);
-  --note-g: oklch(0.25 0.02 50);
-
-  /* Neumorphic shadows */
-  --shadow-neumorphic: 6px 6px 12px oklch(0.85 0.01 80), -6px -6px 12px oklch(1 0 0);
-  --shadow-neumorphic-inset: inset 4px 4px 8px oklch(0.85 0.01 80), inset -4px -4px 8px oklch(1 0 0);
-  --shadow-neumorphic-pressed: inset 2px 2px 4px oklch(0.85 0.01 80), inset -2px -2px 4px oklch(1 0 0);
+  /* Vibrant note colors matching medieval palette */
+  --note-a: oklch(0.65 0.25 25); /* red */
+  --note-b: oklch(0.7 0.18 50); /* orange */
+  --note-c: oklch(0.75 0.2 90); /* yellow */
+  --note-d: oklch(0.65 0.2 150); /* green */
+  --note-e: oklch(0.6 0.15 200); /* teal/cyan */
+  --note-f: oklch(0.6 0.2 240); /* blue */
+  --note-g: oklch(0.7 0.2 350); /* pink/purple */
 }
 
 .dark {
-  --background: oklch(0.22 0.01 250);
-  --foreground: oklch(0.92 0.01 80);
-  --card: oklch(0.22 0.01 250);
-  --card-foreground: oklch(0.92 0.01 80);
-  --popover: oklch(0.22 0.01 250);
-  --popover-foreground: oklch(0.92 0.01 80);
-  --primary: oklch(0.65 0.18 55);
-  --primary-foreground: oklch(0.15 0.01 250);
-  --secondary: oklch(0.28 0.01 250);
-  --secondary-foreground: oklch(0.92 0.01 80);
-  --muted: oklch(0.28 0.01 250);
-  --muted-foreground: oklch(0.65 0.01 80);
-  --accent: oklch(0.7 0.18 85);
-  --accent-foreground: oklch(0.15 0.01 250);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.3 0.01 250);
-  --input: oklch(0.28 0.01 250);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
-
-  /* Note colors for dark mode - slightly brighter */
-  --note-a: oklch(0.65 0.22 25);
-  --note-b: oklch(0.75 0.2 85);
-  --note-c: oklch(0.7 0.2 55);
-  --note-d: oklch(0.68 0.18 35);
-  --note-e: oklch(0.65 0.15 160);
-  --note-f: oklch(0.5 0.12 250);
-  --note-g: oklch(0.75 0.02 80);
-
-  --shadow-neumorphic: 6px 6px 12px oklch(0.15 0.01 250), -6px -6px 12px oklch(0.3 0.01 250);
-  --shadow-neumorphic-inset: inset 4px 4px 8px oklch(0.15 0.01 250), inset -4px -4px 8px oklch(0.3 0.01 250);
-  --shadow-neumorphic-pressed: inset 2px 2px 4px oklch(0.15 0.01 250), inset -2px -2px 4px oklch(0.3 0.01 250);
+  /* Same as root - pure black with vibrant accents */
+  --background: oklch(0 0 0);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.05 0 0);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.05 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.7 0.2 350);
+  --primary-foreground: oklch(0 0 0);
+  --secondary: oklch(0.6 0.15 200);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.15 0 0);
+  --muted-foreground: oklch(0.7 0 0);
+  --accent: oklch(0.7 0.18 50);
+  --accent-foreground: oklch(0 0 0);
+  --destructive: oklch(0.6 0.25 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.2 0 0);
+  --input: oklch(0.1 0 0);
+  --ring: oklch(0.7 0.2 350);
+  --chart-1: oklch(0.7 0.2 350);
+  --chart-2: oklch(0.6 0.2 240);
+  --chart-3: oklch(0.6 0.15 200);
+  --chart-4: oklch(0.7 0.18 50);
+  --chart-5: oklch(0.75 0.2 90);
+  --sidebar: oklch(0.05 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.7 0.2 350);
+  --sidebar-primary-foreground: oklch(0 0 0);
+  --sidebar-accent: oklch(0.1 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.2 0 0);
+  --sidebar-ring: oklch(0.7 0.2 350);
+  --note-a: oklch(0.65 0.25 25);
+  --note-b: oklch(0.7 0.18 50);
+  --note-c: oklch(0.75 0.2 90);
+  --note-d: oklch(0.65 0.2 150);
+  --note-e: oklch(0.6 0.15 200);
+  --note-f: oklch(0.6 0.2 240);
+  --note-g: oklch(0.7 0.2 350);
 }
 
 @theme inline {
@@ -159,17 +167,21 @@
   }
 }
 
-/* Neumorphic utility classes */
+/* Flat design utility classes - borders instead of shadows */
 .neumorphic {
-  box-shadow: var(--shadow-neumorphic);
+  border: 2px solid var(--border);
+  background: var(--card);
 }
 
 .neumorphic-inset {
-  box-shadow: var(--shadow-neumorphic-inset);
+  border: 2px solid var(--border);
+  background: var(--muted);
 }
 
 .neumorphic-pressed {
-  box-shadow: var(--shadow-neumorphic-pressed);
+  border: 2px solid var(--primary);
+  background: var(--muted);
+  opacity: 0.8;
 }
 
 /* Adding rainbow color cycle animation for guitar icon */

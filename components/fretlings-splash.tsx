@@ -37,11 +37,11 @@ export function FretlingsSplash() {
   if (!showSplash) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-background/95 backdrop-blur-md">
-      <div className="neumorphic rounded-3xl p-10 max-w-md mx-4 text-center space-y-6">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-background">
+      <div className="neumorphic rounded-lg p-10 max-w-md mx-4 text-center space-y-6">
         {/* Logo/Title Area */}
         <div className="space-y-3">
-          <div className="neumorphic-inset rounded-2xl p-6 flex items-center justify-center relative">
+          <div className="neumorphic-inset rounded-lg p-6 flex items-center justify-center relative">
             <Sparkles className="w-12 h-12 text-primary absolute -top-2 -right-2 animate-pulse" />
             <h1 className="text-5xl font-bold text-primary">
               Fretlings
@@ -59,7 +59,7 @@ export function FretlingsSplash() {
         </div>
 
         {/* Audio Info */}
-        <div className="neumorphic-inset rounded-2xl p-4 text-left space-y-2">
+        <div className="neumorphic-inset rounded-lg p-4 text-left space-y-2">
           <div className="flex items-start gap-2">
             <Volume2 className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
             <div className="text-xs text-muted-foreground">
@@ -72,7 +72,7 @@ export function FretlingsSplash() {
         {/* Start Button */}
         <button
           onClick={handleStart}
-          className="neumorphic rounded-full px-10 py-4 text-lg font-semibold hover:neumorphic-pressed transition-all w-full bg-primary text-primary-foreground hover:opacity-90"
+          className="neumorphic rounded-lg px-10 py-4 text-lg font-semibold hover:neumorphic-pressed transition-all w-full bg-primary text-primary-foreground"
         >
           Begin Your Journey
         </button>
