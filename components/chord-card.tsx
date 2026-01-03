@@ -37,6 +37,11 @@ export function ChordCard({ chord }: ChordCardProps) {
 
   return (
     <div className="neumorphic rounded-2xl p-4 bg-background flex flex-col items-center gap-3 transition-all hover:scale-[1.02] active:neumorphic-pressed">
+      {/* Fretling Name */}
+      <div className="w-full text-center">
+        <h3 className="text-lg font-bold text-foreground">{chord.name}</h3>
+      </div>
+      
       <div className="flex items-center gap-2 w-full justify-center">
         <div
           className="px-4 py-1.5 rounded-full text-sm font-semibold border-2 transition-all"
